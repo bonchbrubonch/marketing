@@ -17,6 +17,7 @@
   border-radius: 24px;
   width: fit-content;
   overflow: hidden;
+  flex-shrink: 0;
   transition: linear .2s;
   span{
     display: flex;

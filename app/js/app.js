@@ -1,14 +1,24 @@
-$(document).ready(function(){
-  $('.service__item').hover(
-    function() {
-      $( '.service__item--open' ).removeClass('active');
-    }, function() {
-      $( '.service__item--open' ).addClass('active');
-    }
-  );
+$(document).ready(function () {
+
+  if ($(window).width() >= 1100) {
+    $('.service__item').hover(
+      function () {
+        $('.service__item--open').removeClass('active');
+      },
+      function () {
+        $('.service__item--open').addClass('active');
+      }
+    );
+  }
+
+  $(".header__btn").on("click", function () {
+    $(this).toggleClass("open");
+    $(".header__nav").toggleClass("open");
+    $("body").toggleClass("lock");
+  });
 
 
-  
+
 });
 
 

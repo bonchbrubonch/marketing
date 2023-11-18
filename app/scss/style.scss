@@ -12,10 +12,13 @@
   }
 
   &__logo {
+    position: relative;
+    z-index: 999;
     margin: 0 118px 0 0;
     display: block;
     width: 83px;
     height: 44px;
+    flex-shrink: 0;
 
     img {
       width: 100%;
@@ -50,6 +53,10 @@
         border-color: #46EDA2;
       }
     }
+  }
+
+  &__btn {
+    display: none;
   }
 
   &__social {
@@ -165,6 +172,7 @@
     max-width: 1010px;
     width: 100%;
     margin: 0 auto;
+    align-items: flex-end;
   }
 
   p {
@@ -198,11 +206,12 @@
     padding: 0 0 0 80px;
     align-items: flex-end;
     display: flex;
+    height: fit-content;
 
     &::after {
       content: "";
       position: absolute;
-      bottom: 20px;
+      top: 10px;
       left: 0;
       width: 60px;
       height: 3px;
@@ -390,6 +399,7 @@
   background-repeat: no-repeat;
   background-size: 55%;
   background-position: center;
+  overflow: hidden;
 
   &__inner {
     position: relative;
@@ -406,12 +416,12 @@
     cursor: pointer;
 
     span {
-       display: block;
+      display: block;
       font-size: 20px;
       font-weight: 500;
       line-height: 120%;
       text-transform: uppercase;
-      transition:  linear .2s;
+      transition: linear .2s;
     }
 
     &::after {
@@ -428,9 +438,11 @@
 
     &:hover {
       color: #46EDA2;
-      span{
+
+      span {
         transform: scale(1.1);
       }
+
       &::after {
         opacity: 1;
       }
@@ -561,229 +573,6 @@
     }
   }
 
-  &__box {
-    margin: -245px 0 0 -25px;
-    padding: 0 50px;
-    display: flex;
-    transition: linear .6s;
-  }
-  .service__item-inner{
-    border-radius: 30px;
-    background-color: rgba(34, 53, 36, 0.60);
-    padding: 30px 20px;
-  }
-  &__item {
-    max-width: 405px;
-    width: 100%;
-    position: relative;
-    padding: 0 0 0 25px;
-    height: fit-content;
-    transition: linear .8s;
-    overflow: hidden;
-    h5 {
-      height: 48px;
-      padding: 0 4px;
-      color: #fff;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 120%;
-      text-transform: uppercase;
-      text-align: center;
-      transition: linear .6s;
-    }
-
-    p {
-      display: none;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 130%;
-    }
-
-    li {
-      margin: 0;
-      padding: 0;
-      position: relative;
-      font-size: 0;
-      font-weight: 500;
-      line-height: 0;
-      transition: linear .4s;
-
-      &::before {
-        height: 0;
-        width: 0;
-        opacity: 0;
-        transition: linear .5s;
-      }
-    }
-
-    .btn {
-      margin: 30px 0 0 0;
-      width: 100%;
-      transition: linear .6s;
-
-      &::before {
-        background-color: #fff;
-        transition: linear .4s;
-      }
-    }
-
-    &:hover {
-
-      .excellence__icon {
-        box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.25);
-        background-color: #123420;
-      }
-    }
-
-    &:hover {
-  
-      flex-shrink: 0;
-      .service__item-inner{
-        background-color: rgba(59, 70, 83, 0.40);
-        padding: 40px;
-      }
-      .service__item-box {
-        display: flex;
-      }
-
-      .service__icon {
-        margin: 0 30px 0 0;
-      }
-
-      h5 {
-        padding: 0;
-        height: auto;
-        color: #DDA564;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 120%;
-        text-transform: uppercase;
-        text-align: left;
-      }
-
-      p {
-        display: block;
-      }
-
-      li {
-        margin: 0 0 6px 0;
-        padding: 0 0 0 25px;
-        position: relative;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-
-        &::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 4px;
-          width: 16px;
-          height: 16px;
-          background-image: url("../images/dest/icons/check.svg");
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center;
-          opacity: 1;
-        }
-      }
-
-      .btn {
-        margin: 50px 0 0 0;
-        width: fit-content;
-        &::before{
-          background-color: #fff;
-          opacity: 1 !important;
-        }
-      }
-    }
-  }
-
-  &__item.active {
-    flex-shrink: 0;
-    .service__item-inner{
-      background-color: rgba(59, 70, 83, 0.40);
-      padding: 40px;
-    }
-    .service__item-box {
-      display: flex;
-    }
-
-    .service__icon {
-      margin: 0 30px 0 0;
-    }
-
-    h5 {
-      padding: 0;
-      height: auto;
-      color: #DDA564;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 120%;
-      text-transform: uppercase;
-    }
-
-    p {
-      display: block;
-    }
-
-    li {
-      margin: 0 0 6px 0;
-      padding: 0 0 0 25px;
-      position: relative;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 4px;
-        width: 16px;
-        height: 16px;
-        background-image: url("../images/dest/icons/check.svg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        opacity: 1;
-        transition: linear .4s;
-      }
-    }
-
-    .btn {
-      margin: 50px 0 0 0;
-      width: fit-content;
-      &::before{
-        background-color: #fff;
-        opacity: 1 !important;
-      }
-    }
-  }
-
-
-  &__item-inner {
-    position: relative;
-    z-index: 1;
-  }
-
-  &__item-box {
-    margin: 0 0 30px 0;
-    align-items: center;
-  }
-
-  &__icon {
-    margin: 0 auto 30px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 47px;
-    height: 47px;
-    border-radius: 12px;
-    background: #123420;
-    flex-shrink: 0;
-    transition: linear .3s
-  }
 
 }
 
@@ -925,11 +714,14 @@
     font-weight: 400;
     line-height: 20px;
   }
-  .btn{
+
+  .btn {
     border: none;
-    &:hover{
+
+    &:hover {
       color: #fff;
-      svg path{
+
+      svg path {
         fill: #fff;
       }
     }
@@ -976,8 +768,25 @@
 /*end footer=============*/
 
 
-
-
+.modal {
+  padding: 90px 30px 30px 30px;
+  display: none;
+  max-width: 737px;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #0F0E0E;
+  background-image: url("../images/dest/content/modal-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.fancybox-slide--html .fancybox-close-small{
+  top: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  opacity: 1;
+}
 
 
 
