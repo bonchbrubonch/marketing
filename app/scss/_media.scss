@@ -21,7 +21,7 @@
       width: 100%;
       position: relative;
       padding: 0 0 0 25px;
-      transition: linear .8s;
+      transition: linear .6s;
       overflow: hidden;
       height: fit-content;
 
@@ -34,33 +34,49 @@
         line-height: 120%;
         text-transform: uppercase;
         text-align: center;
-        transition: linear .6s;
+        transition: linear .9s;
       }
 
       p {
         // display: none;
-        font-size: 0;
+        font-size: 14px;
         font-weight: 400;
         line-height: 130%;
         transition: linear .2s;
         // transition: opacity 1s;
-        opacity: 0;
+        // opacity: 0;
+        height: auto;
+        max-height: 0;
+        transition: all .4s ease-out;
+        overflow: hidden;
       }
-
+      ul{
+        height: auto;
+        max-height: 0;
+        transition: all .4s ease-out;
+        overflow: hidden;
+      }
       li {
-        margin: 0;
-        padding: 0;
+        margin: 0 0 6px 0;
+        padding: 0 0 0 25px;
         position: relative;
-        font-size: 0;
+        font-size: 14px;
         font-weight: 500;
-        line-height: 0;
-        transition: linear .4s;
+        line-height: 20px;
 
         &::before {
-          height: 0;
-          width: 0;
-          opacity: 0;
-          transition: linear .5s;
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 4px;
+          width: 16px;
+          height: 16px;
+          background-image: url("../images/dest/icons/check.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+          opacity: 1;
+          transition: linear .4s;
         }
       }
 
@@ -112,12 +128,17 @@
         }
 
         p {
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 130%;
-          opacity: 1;
+          // font-size: 14px;
+          // font-weight: 400;
+          // line-height: 130%;
+          // opacity: 1;
+          max-height: 1000px;
+          transition: all 1s ease-in;
         }
-
+        ul{
+          max-height: 1000px;
+          transition: all 1s ease-in;
+        }
         li {
           margin: 0 0 6px 0;
           padding: 0 0 0 25px;
@@ -180,13 +201,11 @@
       }
 
       p {
-
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 130%;
-        opacity: 1;
+        max-height: 1000px;
       }
-
+      ul{
+        max-height: 1000px;
+      }
       li {
         margin: 0 0 6px 0;
         padding: 0 0 0 25px;
