@@ -24,8 +24,12 @@
     position: relative;
     z-index: 1;
   }
-  img{
+  img,
+  svg{
     margin: 0 0 0 10px;
+  }
+  svg path{
+    transition: linear .2s;
   }
   &--header {
     color: #fff;
