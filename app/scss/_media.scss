@@ -36,7 +36,13 @@
         line-height: 120%;
         text-transform: uppercase;
         text-align: center;
-        transition: linear .5s;
+        padding: 0;
+        position: absolute;
+        top: 77px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 176px;
+        transition:  linear .5s;
       }
 
       p {
@@ -113,15 +119,6 @@
         transform: translateX(-50%);
       }
 
-      h5 {
-        padding: 0;
-        position: absolute;
-        top: 77px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 176px;
-      }
-
       // .service__item-box--hover {
       //   flex-direction: row;
       //   height: auto;
@@ -183,6 +180,26 @@
           left: 65px;
           transform: translate(0, -50%);
           width: 84%;
+
+
+        animation-name: fade;
+        animation-duration: .5s;
+        /* animation-iteration-count: 3; */
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in-out;
+        @keyframes fade{
+          from {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+        
+          to {
+            opacity: 1;
+          }
+        }
+          
         }
 
         .service__icon {
