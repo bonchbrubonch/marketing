@@ -16,7 +16,7 @@
       transition: linear .8s;
       max-height: 580px;
     }
-    
+
     &__item {
       border-radius: 30px;
       max-width: 405px;
@@ -42,7 +42,26 @@
         left: 50%;
         transform: translateX(-50%);
         width: 176px;
-        transition:  linear .5s;
+        transition: linear .5s;
+      }
+
+      .title-desk {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        opacity: 0;
+        transition: linear .5s;
+      }
+
+      .title-mob {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        transition: linear .5s;
+        width: 176px;
+        text-align: center;
       }
 
       p {
@@ -139,7 +158,16 @@
           background-color: rgba(59, 70, 83, 0.40);
           padding: 40px;
         }
-
+        .title-desk {
+          opacity: 1;
+        }
+  
+        .title-mob {
+          // left: 30px;
+          right: -100px;
+          bottom: 100px;
+          opacity: 0;
+        }
         // .service__item-box {
         //   height: auto;
         //   max-height: 0;
@@ -166,7 +194,7 @@
           height: 45px;
         }
 
-        h5{
+        h5 {
           padding: 0;
           height: auto;
           color: #DDA564;
@@ -181,26 +209,6 @@
           left: 65px;
           transform: translate(0, -50%);
           width: 84%;
-
-
-        animation-name: fade;
-        animation-duration: .8s;
-        /* animation-iteration-count: 3; */
-        animation-iteration-count: 1;
-        animation-timing-function: ease-in-out;
-        @keyframes fade{
-          from {
-            opacity: 1;
-          }
-          50% {
-            opacity: .1;
-          }
-        
-          to {
-            opacity: 1;
-          }
-        }
-          
         }
 
         .service__icon {
@@ -263,7 +271,16 @@
 
     &__item.active {
       flex-shrink: 0;
-     
+      .title-desk {
+        opacity: 1;
+      }
+
+      .title-mob {
+        // left: 30px;
+        right: -100px;
+        bottom: 100px;
+        opacity: 0;
+      }
       .service__item-inner {
         background-color: rgba(59, 70, 83, 0.40);
         padding: 40px;
@@ -387,6 +404,9 @@
 
 
 @media (max-width: 1100px) {
+  .title-desk{
+    display: none;
+  }
   .header__btn {
     margin: 0 0 0 auto;
     padding: 0;
