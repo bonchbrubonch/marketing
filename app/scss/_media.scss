@@ -1,4 +1,4 @@
-@media (min-width: 1100px) {
+@media (min-width: 1101px) {
   .service {
     &__box {
       margin: -245px 0 0 -25px;
@@ -19,13 +19,15 @@
 
     &__item {
       border-radius: 30px;
-      max-width: 405px;
-      width: 100%;
+      width: 258.5px;
+      flex-shrink: 0;
       position: relative;
       padding: 0 0 0 25px;
-      transition: all .4s ease-out;
+      // transition: all .4s ease-out;
+      transition: all .4s;
       height: fit-content;
       min-height: 300px !important;
+
 
       h5 {
         height: 48px;
@@ -151,23 +153,25 @@
       // }
 
       &:hover {
-        transition: all 1.2s ease-in;
+        // transition: all 1.2s ease-in;
         flex-shrink: 0;
+        width: 375px;
 
         .service__item-inner {
           background-color: rgba(59, 70, 83, 0.40);
           padding: 40px;
         }
+
         .title-desk {
           opacity: 1;
         }
-  
+
         .title-mob {
-          // left: 30px;
-          right: -100px;
+          right: -10px;
           bottom: 100px;
           opacity: 0;
         }
+
         // .service__item-box {
         //   height: auto;
         //   max-height: 0;
@@ -224,13 +228,13 @@
           // line-height: 130%;
           // opacity: 1;
           max-height: 1000px;
-          transition: all 1.6s ease-in;
+          transition: all 1.5s ease-in;
           opacity: 1;
         }
 
         ul {
           max-height: 1000px;
-          transition: all 1.6s ease-in;
+          transition: all 1.5s ease-in;
           opacity: 1;
         }
 
@@ -270,7 +274,9 @@
     }
 
     &__item.active {
+      width: 375px;
       flex-shrink: 0;
+
       .title-desk {
         opacity: 1;
       }
@@ -281,6 +287,7 @@
         bottom: 100px;
         opacity: 0;
       }
+
       .service__item-inner {
         background-color: rgba(59, 70, 83, 0.40);
         padding: 40px;
@@ -396,17 +403,34 @@
       border-radius: 12px;
       background: #123420;
       flex-shrink: 0;
-      transition: linear .3s
+      transition: linear .5s;
     }
 
   }
 }
 
+@media (max-width: 1300px) {
+  .service__box {
+    padding: 0 20px;
+    justify-content: center;
+  }
+
+  .service__item.active,
+  .service__item:hover {
+    width: 340px;
+  }
+
+  .service__item {
+    width: 238.5px;
+  }
+
+}
 
 @media (max-width: 1100px) {
-  .title-desk{
+  .title-desk {
     display: none;
   }
+
   .header__btn {
     margin: 0 0 0 auto;
     padding: 0;
@@ -598,12 +622,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: -245px 20px 0 0;
+    margin: -245px 0 0 -20px;
+    padding: 0 10px;
+    width: calc(100% + 20px);
   }
 
   .service__item {
     margin: 0 0 20px 20px;
-    width: calc(50% - 20px);
+    width: calc(50% - 20px) !important;
     flex-shrink: 0;
 
     .service__item-inner {
@@ -1012,7 +1038,7 @@
   }
 
   .service__item {
-    width: calc(100% - 20px);
+    width: calc(100% - 20px) !important;
   }
 
   .service__left h3 {
