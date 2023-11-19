@@ -14,16 +14,16 @@
       padding: 30px 20px;
       height: fit-content;
       transition: linear .8s;
-      max-height: 463px;
+      max-height: 580px;
     }
-
+    
     &__item {
+      border-radius: 30px;
       max-width: 405px;
       width: 100%;
       position: relative;
       padding: 0 0 0 25px;
       transition: all .4s ease-out;
-      overflow: hidden;
       height: fit-content;
       min-height: 300px !important;
 
@@ -36,7 +36,7 @@
         line-height: 120%;
         text-transform: uppercase;
         text-align: center;
-        transition: linear .4s;
+        transition: linear .5s;
       }
 
       p {
@@ -85,7 +85,7 @@
       .btn {
         margin: 30px 0 0 0;
         width: 100%;
-        transition: linear .6s;
+        transition: linear 1.2s;
 
         &::before {
           background-color: #fff;
