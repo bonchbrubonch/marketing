@@ -1555,9 +1555,9 @@ body.lock {
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 176px;
-    -webkit-transition: linear .5s;
-    -o-transition: linear .5s;
-    transition: linear .5s;
+    -webkit-transition: linear .5s !important;
+    -o-transition: linear .5s !important;
+    transition: linear .5s !important;
   }
   .service__item .title-desk {
     position: absolute;
@@ -1789,6 +1789,9 @@ body.lock {
         -ms-transform: translate(0, -50%);
             transform: translate(0, -50%);
     width: 84%;
+    -webkit-transition: linear .5s;
+    -o-transition: linear .5s;
+    transition: linear .5s;
   }
   .service__item.active .service__icon {
     position: absolute;
