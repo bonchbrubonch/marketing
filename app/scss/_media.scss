@@ -21,7 +21,7 @@
       width: 100%;
       position: relative;
       padding: 0 0 0 25px;
-      transition: linear .6s;
+      transition: linear .9s;
       overflow: hidden;
       height: fit-content;
 
@@ -42,20 +42,22 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 130%;
-        transition: linear .2s;
+        // transition: linear .5s;
         // transition: opacity 1s;
         // opacity: 0;
         height: auto;
         max-height: 0;
-        transition: all .4s ease-out;
+        transition: all .9s ease-out;
         overflow: hidden;
       }
-      ul{
+
+      ul {
         height: auto;
         max-height: 0;
-        transition: all .4s ease-out;
+        transition: all .9s ease-out;
         overflow: hidden;
       }
+
       li {
         margin: 0 0 6px 0;
         padding: 0 0 0 25px;
@@ -76,7 +78,7 @@
           background-size: contain;
           background-position: center;
           opacity: 1;
-          transition: linear .4s;
+          transition: linear .9s;
         }
       }
 
@@ -133,12 +135,14 @@
           // line-height: 130%;
           // opacity: 1;
           max-height: 1000px;
-          transition: all 1s ease-in;
+          transition: all 2s ease-in;
         }
-        ul{
+
+        ul {
           max-height: 1000px;
-          transition: all 1s ease-in;
+          transition: all 2s ease-in;
         }
+
         li {
           margin: 0 0 6px 0;
           padding: 0 0 0 25px;
@@ -203,9 +207,11 @@
       p {
         max-height: 1000px;
       }
-      ul{
+
+      ul {
         max-height: 1000px;
       }
+
       li {
         margin: 0 0 6px 0;
         padding: 0 0 0 25px;
@@ -567,6 +573,18 @@
   .contacts {
     padding: 60px 0 90px;
   }
+
+  .service__item .service__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 47px;
+    border-radius: 12px;
+    background: #46eda24d;
+    margin: 0 0 30px 0;
+  }
+
 }
 
 @media (max-width: 900px) {
@@ -886,17 +904,6 @@
     flex-direction: column;
   }
 
-  .service__item .service__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 47px;
-    height: 47px;
-    border-radius: 12px;
-    background: #46eda24d;
-    margin: 0 0 30px 0;
-  }
-
   .service__item .btn {
     margin: 20px 0 0 0;
   }
@@ -1001,7 +1008,8 @@
   .footer p {
     font-size: 10px;
   }
-  .footer::after{
+
+  .footer::after {
     background-image: url("../images/dest/icons/mob-menu.svg");
     background-position: bottom 0 right -110px;
     background-size: 320px 615px;

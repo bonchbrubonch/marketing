@@ -331,6 +331,7 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 130%;
+      flex: 1 1 auto;
     }
 
     li {
@@ -372,8 +373,11 @@
   }
 
   &__inner {
+    display: flex;
+    flex-direction: column;
     position: relative;
     z-index: 1;
+    height: 100%;
   }
 
   &__icon {
@@ -708,6 +712,26 @@
     }
   }
 
+  &__group.error {
+    & *{
+      color: #F90000;
+    }
+    input{
+      border: 1px solid #F90000;
+      &::placeholder{
+        color: #F90000;
+      }
+    }
+    span {
+      display: flex;
+      margin: 5px 0 0 24px;
+      color: #F90000;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 20px;
+    }
+  }
+
   p {
     margin: -15px 0 10px 22px;
     font-size: 12px;
@@ -780,7 +804,8 @@
   background-size: cover;
   background-position: top center;
 }
-.fancybox-slide--html .fancybox-close-small{
+
+.fancybox-slide--html .fancybox-close-small {
   top: 40px;
   right: 40px;
   width: 60px;
