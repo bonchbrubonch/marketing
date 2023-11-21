@@ -14,9 +14,9 @@
   &__logo {
     position: relative;
     z-index: 999;
-    margin: 0 118px 0 0;
+    margin: 0 70px 0 0;
     display: block;
-    width: 83px;
+    width: 130px;
     height: 44px;
     flex-shrink: 0;
 
@@ -229,7 +229,7 @@
 
 /*start excellence============*/
 .excellence {
-  padding: 95px 0 75px;
+  padding: 95px 0 45px;
   background-image: url("../images/dest/content/excellence-bg.png");
   background-repeat: no-repeat;
   background-position: left 35%;
@@ -320,7 +320,7 @@
 
     h5 {
       margin: 0 0 30px 0;
-      color: #DDA564;
+      color: #FF8E0C;
       font-size: 20px;
       font-weight: 500;
       line-height: 120%;
@@ -332,6 +332,7 @@
       font-weight: 400;
       line-height: 130%;
       flex: 1 1 auto;
+      color: #D9D9D9;
     }
 
     li {
@@ -358,6 +359,8 @@
 
     .btn {
       margin: 50px 0 0 0;
+      background-color: #E0E0E0;
+      color: #3B4653;
     }
 
     &:hover {
@@ -396,112 +399,108 @@
 
 /*end excellence============*/
 
-/*start atom=====================*/
-.atom {
-  padding: 25px 0 65px;
-  background-image: url("../images/dest/content/atom-bg.png");
+.statistic {
+  padding: 30px 0 70px 0;
+  background-image: url("../images/dest/icons/service-bg.svg");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: 55%;
-  background-position: center;
+  background-position: bottom right;
   overflow: hidden;
-
-  &__inner {
+  .container{
     position: relative;
-    width: 786px;
-    margin: 0 auto;
-  }
-
-  &__one,
-  &__two,
-  &__three,
-  &__four {
-    position: absolute;
-    transition: linear .2s;
-    cursor: pointer;
-
-    span {
-      display: block;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 120%;
-      text-transform: uppercase;
-      transition: linear .2s;
-    }
-
-    &::after {
+    &::before{
       content: "";
       position: absolute;
-      width: 47px;
-      height: 47px;
+      bottom: -153px;
+      left: -96px;
+      width: 557px;
+      height: 1046px;
+      background-image: url("../images/dest/icons/service.svg");
       background-repeat: no-repeat;
       background-size: contain;
-      background-image: url("../images/dest/content/circle.png");
-      transition: linear .2s;
-      opacity: 0;
+      background-repeat: no-repeat;
+      z-index: -1;
     }
+  }
+  &__top {
+    display: flex;
+    margin: 0 0 90px 0;
+    h3 {
+      margin: 0 15% 0 0;
+      max-width: 435px;
+      width: 100%;
+      color: #FFF;
+      font-size: 46px;
+      font-weight: 800;
+      line-height: 120%;
+      letter-spacing: 1.38px;
 
-    &:hover {
-      color: #46EDA2;
-
-      span {
-        transform: scale(1.1);
+      strong {
+        margin: 25px 0 0 0;
+        display: block;
+        text-align: right;
+        font-size: 80px;
       }
+    }
 
-      &::after {
-        opacity: 1;
-      }
+    p {
+    
+      max-width: 495px;
+      color: #D9D9D9;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 120%;
     }
   }
 
-  &__one {
-    top: 50px;
-    left: 240px;
-
-    &::after {
-      left: -63px;
-      bottom: -17px;
-    }
-
+  &__inner {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  &__two {
-    top: 35%;
-    right: -11%;
-
-    &::after {
-      left: -52px;
-      top: -35px;
-    }
-  }
-
-  &__three {
-    bottom: 36%;
-    left: -12%;
-
-    &::after {
-      right: -70px;
-      bottom: -25px;
-      width: 54px;
-      height: 54px;
+  &__item {
+    text-align: center;
+    margin: 0 15px 45px 15px;
+    p {
+      max-width: 185px;
+      margin: 10px auto 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 130%;
+      letter-spacing: 0.42px;
     }
   }
 
-  &__four {
-    bottom: 10%;
-    right: -7%;
+  &__box {
+    margin: 0 50px;
+    display: flex;
+    background: linear-gradient(182deg, #46EDA2 25.71%, #46EDA2 25.71%, #15201B 72%);
+    background-position: center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 
-    &::after {
-      left: -66px;
-      bottom: 15px;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 120%;
+
+    strong {
+      display: block;
+      font-weight: 500;
     }
+
+    span {}
   }
+
 }
-
-/*end atom=====================*/
 
 /*start service===============*/
 .service {
-  padding: 80px 0 65px;
+  padding: 10px 0 65px;
   position: relative;
 
   &::after {
@@ -520,6 +519,7 @@
   &__inner {
     padding: 0 0 260px 0;
     display: flex;
+    justify-content: space-between;
     background-image: url("../images/dest/content/service.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -562,8 +562,8 @@
   }
 
   &__right {
-    padding: 45px 35px 0 60px;
-    max-width: 850px;
+    padding: 71px 35px 0 60px;
+    max-width: 800px;
     width: 100%;
 
 
@@ -601,6 +601,9 @@
       font-weight: 500;
       line-height: 120%;
       text-transform: uppercase;
+      span{
+        color: #46EDA2;
+      }
     }
 
     p {
@@ -713,15 +716,18 @@
   }
 
   &__group.error {
-    & *{
+    & * {
       color: #F90000;
     }
-    input{
+
+    input {
       border: 1px solid #F90000;
-      &::placeholder{
+
+      &::placeholder {
         color: #F90000;
       }
     }
+
     span {
       display: flex;
       margin: 5px 0 0 24px;

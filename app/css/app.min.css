@@ -559,9 +559,9 @@ body.lock {
 .header__logo {
   position: relative;
   z-index: 999;
-  margin: 0 118px 0 0;
+  margin: 0 70px 0 0;
   display: block;
-  width: 83px;
+  width: 130px;
   height: 44px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -796,7 +796,7 @@ body.lock {
 /*end info============*/
 /*start excellence============*/
 .excellence {
-  padding: 95px 0 75px;
+  padding: 95px 0 45px;
   background-image: url("../images/dest/content/excellence-bg.png");
   background-repeat: no-repeat;
   background-position: left 35%;
@@ -909,7 +909,7 @@ body.lock {
 
 .excellence__item h5 {
   margin: 0 0 30px 0;
-  color: #DDA564;
+  color: #FF8E0C;
   font-size: 20px;
   font-weight: 500;
   line-height: 120%;
@@ -923,6 +923,7 @@ body.lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  color: #D9D9D9;
 }
 
 .excellence__item li {
@@ -949,6 +950,8 @@ body.lock {
 
 .excellence__item .btn {
   margin: 50px 0 0 0;
+  background-color: #E0E0E0;
+  color: #3B4653;
 }
 
 .excellence__item:hover::before {
@@ -997,115 +1000,118 @@ body.lock {
 }
 
 /*end excellence============*/
-/*start atom=====================*/
-.atom {
-  padding: 25px 0 65px;
-  background-image: url("../images/dest/content/atom-bg.png");
+.statistic {
+  padding: 30px 0 70px 0;
+  background-image: url("../images/dest/icons/service-bg.svg");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: 55%;
-  background-position: center;
+  background-position: bottom right;
   overflow: hidden;
 }
 
-.atom__inner {
+.statistic .container {
   position: relative;
-  width: 786px;
-  margin: 0 auto;
 }
 
-.atom__one, .atom__two, .atom__three, .atom__four {
-  position: absolute;
-  -webkit-transition: linear .2s;
-  -o-transition: linear .2s;
-  transition: linear .2s;
-  cursor: pointer;
-}
-
-.atom__one span, .atom__two span, .atom__three span, .atom__four span {
-  display: block;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 120%;
-  text-transform: uppercase;
-  -webkit-transition: linear .2s;
-  -o-transition: linear .2s;
-  transition: linear .2s;
-}
-
-.atom__one::after, .atom__two::after, .atom__three::after, .atom__four::after {
+.statistic .container::before {
   content: "";
   position: absolute;
-  width: 47px;
-  height: 47px;
+  bottom: -153px;
+  left: -96px;
+  width: 557px;
+  height: 1046px;
+  background-image: url("../images/dest/icons/service.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("../images/dest/content/circle.png");
-  -webkit-transition: linear .2s;
-  -o-transition: linear .2s;
-  transition: linear .2s;
-  opacity: 0;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
-.atom__one:hover, .atom__two:hover, .atom__three:hover, .atom__four:hover {
-  color: #46EDA2;
+.statistic__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 90px 0;
 }
 
-.atom__one:hover span, .atom__two:hover span, .atom__three:hover span, .atom__four:hover span {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+.statistic__top h3 {
+  margin: 0 15% 0 0;
+  max-width: 435px;
+  width: 100%;
+  color: #FFF;
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 1.38px;
 }
 
-.atom__one:hover::after, .atom__two:hover::after, .atom__three:hover::after, .atom__four:hover::after {
-  opacity: 1;
+.statistic__top h3 strong {
+  margin: 25px 0 0 0;
+  display: block;
+  text-align: right;
+  font-size: 80px;
 }
 
-.atom__one {
-  top: 50px;
-  left: 240px;
+.statistic__top p {
+  max-width: 495px;
+  color: #D9D9D9;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
 }
 
-.atom__one::after {
-  left: -63px;
-  bottom: -17px;
+.statistic__inner {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.atom__two {
-  top: 35%;
-  right: -11%;
+.statistic__item {
+  text-align: center;
+  margin: 0 15px 45px 15px;
 }
 
-.atom__two::after {
-  left: -52px;
-  top: -35px;
+.statistic__item p {
+  max-width: 185px;
+  margin: 10px auto 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0.42px;
 }
 
-.atom__three {
-  bottom: 36%;
-  left: -12%;
+.statistic__box {
+  margin: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -o-linear-gradient(268deg, #46EDA2 25.71%, #46EDA2 25.71%, #15201B 72%);
+  background: linear-gradient(182deg, #46EDA2 25.71%, #46EDA2 25.71%, #15201B 72%);
+  background-position: center;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 80px;
+  font-weight: 500;
+  line-height: 120%;
 }
 
-.atom__three::after {
-  right: -70px;
-  bottom: -25px;
-  width: 54px;
-  height: 54px;
+.statistic__box strong {
+  display: block;
+  font-weight: 500;
 }
 
-.atom__four {
-  bottom: 10%;
-  right: -7%;
-}
-
-.atom__four::after {
-  left: -66px;
-  bottom: 15px;
-}
-
-/*end atom=====================*/
 /*start service===============*/
 .service {
-  padding: 80px 0 65px;
+  padding: 10px 0 65px;
   position: relative;
 }
 
@@ -1127,6 +1133,9 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-image: url("../images/dest/content/service.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -1171,8 +1180,8 @@ body.lock {
 }
 
 .service__right {
-  padding: 45px 35px 0 60px;
-  max-width: 850px;
+  padding: 71px 35px 0 60px;
+  max-width: 800px;
   width: 100%;
 }
 
@@ -1209,6 +1218,10 @@ body.lock {
   font-weight: 500;
   line-height: 120%;
   text-transform: uppercase;
+}
+
+.contacts__left h5 span {
+  color: #46EDA2;
 }
 
 .contacts__left p {
@@ -1634,6 +1647,11 @@ body.lock {
     -webkit-transition: linear .6s;
     -o-transition: linear .6s;
     transition: linear .6s;
+    background: #FF8E0C;
+    max-width: 181px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    white-space: nowrap;
   }
   .service__item .btn::before {
     background-color: #fff;
@@ -1892,6 +1910,17 @@ body.lock {
 }
 
 @media (max-width: 1100px) {
+  .service__right {
+    padding: 0 35px 0 60px;
+    max-width: 800px;
+    width: 100%;
+  }
+  .service__inner {
+    padding: 30px 0 260px 0;
+  }
+  .statistic__top h3 {
+    margin: 0 5% 0 0;
+  }
   .title-desk {
     display: none;
   }
@@ -2038,54 +2067,6 @@ body.lock {
     background-size: 100%;
     background-position: right top;
   }
-  .atom__inner {
-    width: 650px;
-  }
-  .atom__inner img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .atom__three::after,
-  .atom__one::after,
-  .atom__two::after,
-  .atom__four::after {
-    width: 42px;
-    height: 42px;
-  }
-  .atom__one {
-    top: 34px;
-    left: 212px;
-  }
-  .atom__two {
-    top: 36%;
-    right: 10%;
-  }
-  .atom__two::after {
-    left: auto;
-    right: -38px;
-  }
-  .atom__three {
-    bottom: 42%;
-    left: 11%;
-  }
-  .atom__three::after {
-    right: auto;
-    left: -37px;
-    bottom: -56px;
-    width: 49px;
-    height: 49px;
-  }
-  .atom__four {
-    bottom: 9.5%;
-    right: 25%;
-  }
-  .atom__four::after {
-    left: auto;
-    right: -55px;
-    bottom: 15px;
-  }
   .service__box {
     position: relative;
     z-index: 1;
@@ -2227,6 +2208,21 @@ body.lock {
 }
 
 @media (max-width: 900px) {
+  .statistic__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .statistic__top h3 {
+    margin: 0 0 35px 0;
+  }
+  .statistic__top p {
+    max-width: 100%;
+  }
+  .statistic__top {
+    margin: 0 0 30px 0;
+  }
   .header__inner {
     height: 70px;
   }
@@ -2315,6 +2311,29 @@ body.lock {
 }
 
 @media (max-width: 700px) {
+  .statistic__top h3 {
+    font-size: 30px;
+    max-width: 280px;
+    margin: 0 0 15px 0;
+  }
+  .statistic__top h3 strong {
+    margin: 15px 0 0 0;
+    font-size: 46px;
+  }
+  .statistic__item {
+    width: 50%;
+    margin: 0 0 45px 0;
+  }
+  .statistic__box {
+    margin: 0 10px;
+    font-size: 38px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .statistic .container::before {
+    display: none;
+  }
   .header__nav > ul > li a {
     padding: 20px 24px !important;
     font-size: 14px !important;
@@ -2420,66 +2439,6 @@ body.lock {
   .btn svg {
     width: 14px;
     height: 14px;
-  }
-  .atom__inner {
-    width: 260px;
-  }
-  .atom__three::after,
-  .atom__one::after,
-  .atom__two::after,
-  .atom__four::after {
-    width: 16px;
-    height: 16px;
-  }
-  .atom__three {
-    width: 120px;
-    bottom: 45%;
-    left: -7%;
-  }
-  .atom__three::after {
-    left: 33px;
-    bottom: -27px;
-    width: 19px;
-    height: 19px;
-  }
-  .atom__one {
-    width: 160px;
-    top: 14px;
-    left: 90px;
-  }
-  .atom__one::after {
-    left: -30px;
-    bottom: 8px;
-  }
-  .atom__two {
-    width: 120px;
-    top: 38%;
-    right: -17%;
-  }
-  .atom__two::after {
-    right: 56px;
-    top: -19px;
-  }
-  .atom__four {
-    width: 150px;
-    bottom: -8.5%;
-    right: -6%;
-  }
-  .atom__four::after {
-    right: 60px;
-    bottom: 51px;
-  }
-  .atom__four span,
-  .atom__one span,
-  .atom__three span,
-  .atom__two span {
-    font-size: 14px;
-  }
-  .atom__four span br,
-  .atom__one span br,
-  .atom__three span br,
-  .atom__two span br {
-    display: none;
   }
   .service__item {
     width: calc(100% - 20px) !important;
