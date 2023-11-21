@@ -2347,7 +2347,7 @@ body.lock {
     font-size: 10px;
   }
   .statistic__box {
-    margin: 0 10px;
+    margin: 0;
     font-size: 38px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
