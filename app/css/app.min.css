@@ -1002,29 +1002,25 @@ body.lock {
 /*end excellence============*/
 .statistic {
   padding: 30px 0 70px 0;
-  background-image: url("../images/dest/icons/service-bg.svg");
+  background-image: url("../images/dest/content/service-bg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
-  overflow: hidden;
-}
-
-.statistic .container {
   position: relative;
 }
 
-.statistic .container::before {
+.statistic::before {
   content: "";
   position: absolute;
-  bottom: -153px;
-  left: -96px;
+  top: -209px;
+  left: 0;
   width: 557px;
-  height: 1046px;
+  height: 1354px;
   background-image: url("../images/dest/icons/service.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: -1;
+  z-index: 1;
 }
 
 .statistic__top {
@@ -1035,8 +1031,8 @@ body.lock {
 }
 
 .statistic__top h3 {
-  margin: 0 15% 0 0;
-  max-width: 435px;
+  margin: 0 6% 0 0;
+  max-width: 545px;
   width: 100%;
   color: #FFF;
   font-size: 46px;
@@ -1046,6 +1042,7 @@ body.lock {
 }
 
 .statistic__top h3 strong {
+  color: #FF8E0C;
   margin: 25px 0 0 0;
   display: block;
   text-align: right;
@@ -1093,8 +1090,8 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: -o-linear-gradient(268deg, #46EDA2 25.71%, #46EDA2 25.71%, #15201B 72%);
-  background: linear-gradient(182deg, #46EDA2 25.71%, #46EDA2 25.71%, #15201B 72%);
+  background: -o-linear-gradient(268deg, #FFF 22.2%, rgba(255, 255, 255, 0) 80.63%);
+  background: linear-gradient(182deg, #FFF 22.2%, rgba(255, 255, 255, 0) 80.63%);
   background-position: center;
   background-size: cover;
   -webkit-text-fill-color: transparent;
@@ -1192,6 +1189,10 @@ body.lock {
   font-weight: 500;
   line-height: 130%;
   letter-spacing: 0.42px;
+}
+
+.service__item p {
+  color: #C5C5C5;
 }
 
 /*end service===============*/
@@ -2314,15 +2315,36 @@ body.lock {
   .statistic__top h3 {
     font-size: 30px;
     max-width: 280px;
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
   }
   .statistic__top h3 strong {
-    margin: 15px 0 0 0;
+    margin: 0;
     font-size: 46px;
   }
+  .statistic__top p {
+    max-width: 100%;
+  }
   .statistic__item {
+    font-size: 12px;
     width: 50%;
-    margin: 0 0 45px 0;
+    margin: 0 0 20px 0;
+  }
+  .statistic__top {
+    margin: 0 0 15px 0;
+  }
+  .statistic {
+    padding: 0 0 5px 0;
+  }
+  .statistic::before {
+    width: 275px;
+    height: 800px;
+    top: auto;
+    bottom: -376px;
+    z-index: 1;
+    display: block;
+  }
+  .statistic__item p {
+    font-size: 10px;
   }
   .statistic__box {
     margin: 0 10px;

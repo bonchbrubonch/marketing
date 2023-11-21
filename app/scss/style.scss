@@ -401,33 +401,32 @@
 
 .statistic {
   padding: 30px 0 70px 0;
-  background-image: url("../images/dest/icons/service-bg.svg");
+  background-image: url("../images/dest/content/service-bg.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
-  overflow: hidden;
-  .container{
-    position: relative;
-    &::before{
-      content: "";
-      position: absolute;
-      bottom: -153px;
-      left: -96px;
-      width: 557px;
-      height: 1046px;
-      background-image: url("../images/dest/icons/service.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-repeat: no-repeat;
-      z-index: -1;
-    }
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -209px;
+    left: 0;
+    width: 557px;
+    height: 1354px;
+    background-image: url("../images/dest/icons/service.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
   }
+
   &__top {
     display: flex;
     margin: 0 0 90px 0;
+
     h3 {
-      margin: 0 15% 0 0;
-      max-width: 435px;
+      margin: 0 6% 0 0;
+      max-width: 545px;
       width: 100%;
       color: #FFF;
       font-size: 46px;
@@ -436,6 +435,7 @@
       letter-spacing: 1.38px;
 
       strong {
+        color: #FF8E0C;
         margin: 25px 0 0 0;
         display: block;
         text-align: right;
@@ -444,7 +444,7 @@
     }
 
     p {
-    
+
       max-width: 495px;
       color: #D9D9D9;
       font-size: 16px;
@@ -465,6 +465,7 @@
   &__item {
     text-align: center;
     margin: 0 15px 45px 15px;
+
     p {
       max-width: 185px;
       margin: 10px auto 0;
@@ -478,7 +479,7 @@
   &__box {
     margin: 0 50px;
     display: flex;
-    background: linear-gradient(182deg, #46EDA2 25.71%, #46EDA2 25.71%, #15201B 72%);
+    background: linear-gradient(182deg, #FFF 22.2%, rgba(255, 255, 255, 0.00) 80.63%);
     background-position: center;
     background-size: cover;
     -webkit-text-fill-color: transparent;
@@ -577,6 +578,11 @@
     }
   }
 
+  &__item {
+    p {
+      color: #C5C5C5;
+    }
+  }
 
 }
 
@@ -601,7 +607,8 @@
       font-weight: 500;
       line-height: 120%;
       text-transform: uppercase;
-      span{
+
+      span {
         color: #46EDA2;
       }
     }
