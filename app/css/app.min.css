@@ -887,6 +887,7 @@ body.lock {
   border-radius: 30px;
   overflow: hidden;
   background-color: rgba(59, 70, 83, 0.4);
+  z-index: 2;
 }
 
 .excellence__item::before {
@@ -1001,7 +1002,7 @@ body.lock {
 
 /*end excellence============*/
 .statistic {
-  padding: 30px 0 70px 0;
+  padding: 30px 0 0 0;
   background-image: url("../images/dest/content/service-bg.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -1014,8 +1015,8 @@ body.lock {
   position: absolute;
   top: -209px;
   left: 0;
-  width: 557px;
-  height: 1354px;
+  width: 595px;
+  height: 1399px;
   background-image: url("../images/dest/icons/service.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -1108,7 +1109,7 @@ body.lock {
 
 /*start service===============*/
 .service {
-  padding: 10px 0 65px;
+  padding: 90px 0 65px;
   position: relative;
 }
 
@@ -2220,6 +2221,7 @@ body.lock {
   }
   .statistic__top p {
     max-width: 100%;
+    font-size: 12px;
   }
   .statistic__top {
     margin: 0 0 30px 0;
@@ -2309,6 +2311,12 @@ body.lock {
     max-width: 320px;
     width: 100%;
   }
+  .header__link {
+    width: calc(100% - 30px);
+  }
+  .header__nav li {
+    margin: 0 0px 0 0;
+  }
 }
 
 @media (max-width: 700px) {
@@ -2327,7 +2335,7 @@ body.lock {
   .statistic__item {
     font-size: 12px;
     width: 50%;
-    margin: 0 0 20px 0;
+    margin: 0 0 25px 0;
   }
   .statistic__top {
     margin: 0 0 15px 0;
@@ -2336,12 +2344,13 @@ body.lock {
     padding: 0 0 5px 0;
   }
   .statistic::before {
-    width: 275px;
-    height: 800px;
+    width: 310px;
+    height: 609px;
     top: auto;
-    bottom: -376px;
+    bottom: -240px;
     z-index: 1;
     display: block;
+    background-image: url("../images/dest/icons/service-1.svg");
   }
   .statistic__item p {
     font-size: 10px;
@@ -2389,7 +2398,7 @@ body.lock {
     font-size: 16px;
   }
   .info {
-    padding: 30px 0 30px;
+    padding: 70px 0 30px;
   }
   .info__left {
     padding: 0 0 0 60px;
@@ -2412,7 +2421,7 @@ body.lock {
     width: 30px;
   }
   .excellence {
-    padding: 45px 0 65px;
+    padding: 65px 0 65px;
     background-position: left -73px top 18%;
     background-size: 435px;
   }
@@ -2449,6 +2458,10 @@ body.lock {
   .excellence__item p {
     font-size: 12px;
     line-height: 120%;
+  }
+  .excellence__item li,
+  .service__item li {
+    font-size: 12px;
   }
   .excellence__item .btn {
     margin: 25px 0 0 0;
@@ -2505,10 +2518,10 @@ body.lock {
     width: 100%;
   }
   .service {
-    padding: 80px 0 20px;
+    padding: 130px 0 0;
   }
   .contacts {
-    padding: 20px 0 60px;
+    padding: 70px 0 60px;
   }
   .contacts__left h5 {
     margin: 0 0 15px 0;
@@ -2588,11 +2601,11 @@ body.lock {
     font-size: 12px;
   }
   .form__group label {
-    margin: 0 0 12px 7px;
+    margin: 0 0 5px 12px;
     font-size: 12px;
   }
   .form__group {
-    margin: 0 0 7px 0;
+    margin: 0 0 20px 0;
   }
   .form p {
     margin: -2px 0 20px 10px;
@@ -2610,5 +2623,16 @@ body.lock {
     background-image: url("../images/dest/icons/mob-menu.svg");
     background-position: bottom 0 right -110px;
     background-size: 320px 615px;
+  }
+  .intro {
+    padding: 115px 0 0;
+  }
+  .statistic {
+    background-image: url("../images/dest/content/excellence-bg2.png");
+    background-size: 164px;
+    background-position: top 42px right;
+  }
+  .statistic__item p {
+    margin: 0 auto;
   }
 }

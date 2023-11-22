@@ -166,7 +166,6 @@
 /*start info============*/
 .info {
   padding: 130px 0 55px;
-
   &__inner {
     display: flex;
     max-width: 1010px;
@@ -303,6 +302,7 @@
     border-radius: 30px;
     overflow: hidden;
     background-color: rgba(59, 70, 83, 0.40);
+    z-index: 2;
 
     &::before {
       content: "";
@@ -400,7 +400,7 @@
 /*end excellence============*/
 
 .statistic {
-  padding: 30px 0 70px 0;
+  padding: 30px 0 0 0;
   background-image: url("../images/dest/content/service-bg.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -411,8 +411,8 @@
     position: absolute;
     top: -209px;
     left: 0;
-    width: 557px;
-    height: 1354px;
+    width: 595px;
+    height: 1399px;
     background-image: url("../images/dest/icons/service.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -501,7 +501,7 @@
 
 /*start service===============*/
 .service {
-  padding: 10px 0 65px;
+  padding: 90px 0 65px;
   position: relative;
 
   &::after {
