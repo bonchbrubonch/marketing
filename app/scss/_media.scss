@@ -517,9 +517,11 @@
   }
 
   .header__link {
-    margin: 60px 0 45px 15px;
+    margin: 60px 0 25px 15px;
   }
-
+  .header__nav a:not(.header__link){
+    padding: 10px 10px;
+  }
   .header__nav.open {
     transform: translateX(0);
   }
@@ -789,7 +791,7 @@
     margin: 0 0 20px 0;
 
     strong {
-      margin: 0;
+      margin: 20px 0 0 0;
       font-size: 46px;
     }
   }

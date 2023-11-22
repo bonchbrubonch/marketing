@@ -2058,7 +2058,10 @@ body.lock {
     padding: 20px 24px;
   }
   .header__link {
-    margin: 60px 0 45px 15px;
+    margin: 60px 0 25px 15px;
+  }
+  .header__nav a:not(.header__link) {
+    padding: 10px 10px;
   }
   .header__nav.open {
     -webkit-transform: translateX(0);
@@ -2332,7 +2335,7 @@ body.lock {
     margin: 0 0 20px 0;
   }
   .statistic__top h3 strong {
-    margin: 0;
+    margin: 20px 0 0 0;
     font-size: 46px;
   }
   .statistic__top p {
