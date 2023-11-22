@@ -385,6 +385,9 @@
 }
 
 @media (max-width: 1100px) {
+  .contacts__left {
+    margin: 0 8% 0 0;
+  }
 
   .service__right {
     padding: 0 35px 0 60px;
@@ -948,10 +951,12 @@
     font-size: 12px;
     line-height: 120%;
   }
+
   .excellence__item li,
-  .service__item li{
+  .service__item li {
     font-size: 12px;
   }
+
   .excellence__item .btn {
     margin: 25px 0 0 0;
   }

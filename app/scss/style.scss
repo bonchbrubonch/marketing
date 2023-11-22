@@ -593,11 +593,14 @@
   padding: 140px 0 130px;
 
   &__inner {
+    max-width: 1125px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
   }
 
   &__left {
-    margin: 0 8% 0 0;
+    margin: 0 8% 0 5%;
     max-width: 430px;
     width: 100%;
 
