@@ -166,6 +166,7 @@
 /*start info============*/
 .info {
   padding: 130px 0 55px;
+
   &__inner {
     display: flex;
     max-width: 1010px;
@@ -406,6 +407,7 @@
   background-repeat: no-repeat;
   background-position: bottom right;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -435,6 +437,7 @@
       letter-spacing: 1.38px;
 
       strong {
+        flex-shrink: 0;
         color: #FF8E0C;
         margin: 25px 0 0 0;
         display: block;
@@ -473,6 +476,36 @@
       font-weight: 500;
       line-height: 130%;
       letter-spacing: 0.42px;
+    }
+  }
+
+  &__item:nth-child(1) {
+    strong {
+      width: 94.81px;
+    }
+  }
+
+  &__item:nth-child(2) {
+    strong {
+      width: 143.61px;
+    }
+  }
+
+  &__item:nth-child(3) {
+    strong {
+      width: 91.77px;
+    }
+  }
+
+  &__item:nth-child(4) {
+    strong {
+      width: 87.45px;
+    }
+  }
+
+  &__item:nth-child(5) {
+    strong {
+      width: 242.97px;
     }
   }
 
@@ -580,6 +613,7 @@
 
   &__item {
     p {
+      width: 270px;
       color: #C5C5C5;
     }
   }
